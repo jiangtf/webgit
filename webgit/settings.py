@@ -125,3 +125,97 @@ STATICFILES_DIRS = ( os.path.join(BASE_DIR, 'static'), )
 # upload folder
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# logging配置
+log_file = os.path.join(BASE_DIR, 'log')
+log_file_path = os.path.join(log_file, 'all.log')
+if not os.path.exists(log_file):
+    os.mkdir(log_file)
+    os.mknod(log_file_path)  # 创建空文件
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': True,
+    'formatters': {
+        # 日志格式
+        'standard': {
+            'format': '%(asctime)s [%(threadName)s:%(thread)d] [%(name)s:%(lineno)d] '
+                      '[%(module)s:%(funcName)s] [%(levelname)s]- %(message)s'
+        }
+    },
+    'filter': {
+
+    },
+    'handlers': {
+        'mail_admins': {
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler',
+            'include_html': True,
+        },
+        'default': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': log_file_path,  # 日志输出文件
+            'maxBytes': 1024 * 1024 * 5,  # 文件大小
+            'backupCount': 5,  # 备份份数
+            'formatter': 'standard',  # 使用哪种formatters日志格式
+        },
+        'error': {
+            'level': 'ERROR',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': log_file_path,
+            'maxBytes': 1024 * 1024 * 5,
+            'backupCount': 5,
+            'formatter': 'standard',
+        },
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'standard'
+        },
+        'request_handler': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': log_file_path,
+            'maxBytes': 1024 * 1024 * 5,
+            'backupCount': 5,
+            'formatter': 'standard',
+        },
+        'scprits_handler': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': log_file_path,
+            'maxBytes': 1024 * 1024 * 5,
+            'backupCount': 5,
+            'formatter': 'standard',
+        }
+    },
+    'loggers': {
+                   'django': {
+                       'handlers': ['default', 'console'],  # 来自上面定义的handlers内容
+                       'level': 'INFO',
+                       'propagate': False  # 是否继承父类的log信息
+                   },
+                   'scripts': {
+                       'handlers': ['scprits_handler'],
+                       'level': 'INFO',
+                       'propagate': False
+                   },
+                   # sourceDns.webdns.views 应用的py文件
+                   'sourceDns.webdns.views': {
+                       'handlers': ['default', 'error'],
+                       'level': 'INFO',
+                       'propagate': True
+                   },
+                   'sourceDns.webdns.util': {
+                       'handlers': ['error'],
+                       'level': 'ERROR',
+                       'propagate': True
+                   },
+                   # 'django.request': {
+                   #             'handlers': ['mail_admins'],
+                   #             'level': 'ERROR',
+                   #             'propagate': False,
+                   #         },
+               }
+}
