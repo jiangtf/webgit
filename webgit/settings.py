@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 """
 Django settings for webgit project.
 
@@ -64,6 +65,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'blog.views.global_setting'
             ],
         },
     },
@@ -126,12 +128,18 @@ STATICFILES_DIRS = ( os.path.join(BASE_DIR, 'static'), )
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+
+
+#网站的基本信息配置
+SITE_NAME='江腾飞的个人博客'
+SITE_DESC='专注python机器学习'
+WEIBO_SINA ='http://weibo.sina.com'
+WEIBO_TENCENT='http://weibo.sina.com'
+PRO_RSS='http://weibo.sina.com'
+PRO_EMAIL='390744119@qq.com'
+
+
 # logging配置
-log_file = os.path.join(BASE_DIR, 'log')
-log_file_path = os.path.join(log_file, 'all.log')
-if not os.path.exists(log_file):
-    os.mkdir(log_file)
-    os.mknod(log_file_path)  # 创建空文件
 
 LOGGING = {
     'version': 1,
@@ -155,7 +163,7 @@ LOGGING = {
         'default': {
             'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': log_file_path,  # 日志输出文件
+            'filename': 'log/all.log',  # 日志输出文件
             'maxBytes': 1024 * 1024 * 5,  # 文件大小
             'backupCount': 5,  # 备份份数
             'formatter': 'standard',  # 使用哪种formatters日志格式
@@ -163,7 +171,7 @@ LOGGING = {
         'error': {
             'level': 'ERROR',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': log_file_path,
+            'filename':  'log/error.log',
             'maxBytes': 1024 * 1024 * 5,
             'backupCount': 5,
             'formatter': 'standard',
@@ -176,7 +184,7 @@ LOGGING = {
         'request_handler': {
             'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': log_file_path,
+            'filename':  'log/script.log',
             'maxBytes': 1024 * 1024 * 5,
             'backupCount': 5,
             'formatter': 'standard',
@@ -184,7 +192,7 @@ LOGGING = {
         'scprits_handler': {
             'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': log_file_path,
+            'filename':  'log/script.log',
             'maxBytes': 1024 * 1024 * 5,
             'backupCount': 5,
             'formatter': 'standard',
@@ -212,10 +220,10 @@ LOGGING = {
                        'level': 'ERROR',
                        'propagate': True
                    },
-                   # 'django.request': {
-                   #             'handlers': ['mail_admins'],
-                   #             'level': 'ERROR',
-                   #             'propagate': False,
-                   #         },
+                   'blog.views': {
+                                'handlers': ['default', 'error'],
+                                'level': 'DEBUG',
+                                'propagate': False,
+                            },
                }
 }
