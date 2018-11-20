@@ -16,7 +16,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
@@ -27,7 +26,6 @@ SECRET_KEY = 'yy+#*w^n(f_oj#g1_i1sy&s@9@0a-f2ycu%*3#!oph%ffw65w3'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -73,17 +71,20 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'webgit.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'blogdb',
+        'USER': 'root',
+        'PASSWORD': '12345678',
+        'HOST': '172.24.2.177',
+        'PORT': '3306',
+        'OPTIONS': {'charset': 'utf8mb4'},
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -103,7 +104,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
@@ -117,30 +117,25 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = ( os.path.join(BASE_DIR, 'static'), )
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 # upload folder
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-
-
-#网站的基本信息配置
-SITE_NAME='江腾飞的个人博客'
-SITE_DESC='专注python机器学习'
-WEIBO_SINA ='http://weibo.sina.com'
-WEIBO_TENCENT='http://weibo.sina.com'
-PRO_RSS='http://weibo.sina.com'
-PRO_EMAIL='390744119@qq.com'
-
+# 网站的基本信息配置
+SITE_NAME = '江腾飞的个人博客'
+SITE_DESC = '专注python机器学习'
+WEIBO_SINA = 'http://weibo.sina.com'
+WEIBO_TENCENT = 'http://weibo.sina.com'
+PRO_RSS = 'http://weibo.sina.com'
+PRO_EMAIL = '390744119@qq.com'
 
 # logging配置
-
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': True,
@@ -171,7 +166,7 @@ LOGGING = {
         'error': {
             'level': 'ERROR',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename':  'log/error.log',
+            'filename': 'log/error.log',
             'maxBytes': 1024 * 1024 * 5,
             'backupCount': 5,
             'formatter': 'standard',
@@ -184,7 +179,7 @@ LOGGING = {
         'request_handler': {
             'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename':  'log/script.log',
+            'filename': 'log/script.log',
             'maxBytes': 1024 * 1024 * 5,
             'backupCount': 5,
             'formatter': 'standard',
@@ -192,38 +187,38 @@ LOGGING = {
         'scprits_handler': {
             'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename':  'log/script.log',
+            'filename': 'log/script.log',
             'maxBytes': 1024 * 1024 * 5,
             'backupCount': 5,
             'formatter': 'standard',
         }
     },
     'loggers': {
-                   'django': {
-                       'handlers': ['default', 'console'],  # 来自上面定义的handlers内容
-                       'level': 'INFO',
-                       'propagate': False  # 是否继承父类的log信息
-                   },
-                   'scripts': {
-                       'handlers': ['scprits_handler'],
-                       'level': 'INFO',
-                       'propagate': False
-                   },
-                   # sourceDns.webdns.views 应用的py文件
-                   'sourceDns.webdns.views': {
-                       'handlers': ['default', 'error'],
-                       'level': 'INFO',
-                       'propagate': True
-                   },
-                   'sourceDns.webdns.util': {
-                       'handlers': ['error'],
-                       'level': 'ERROR',
-                       'propagate': True
-                   },
-                   'blog.views': {
-                                'handlers': ['default', 'error'],
-                                'level': 'DEBUG',
-                                'propagate': False,
-                            },
-               }
+        'django': {
+            'handlers': ['default', 'console'],  # 来自上面定义的handlers内容
+            'level': 'INFO',
+            'propagate': False  # 是否继承父类的log信息
+        },
+        'scripts': {
+            'handlers': ['scprits_handler'],
+            'level': 'INFO',
+            'propagate': False
+        },
+        # sourceDns.webdns.views 应用的py文件
+        'sourceDns.webdns.views': {
+            'handlers': ['default', 'error'],
+            'level': 'INFO',
+            'propagate': True
+        },
+        'sourceDns.webdns.util': {
+            'handlers': ['error'],
+            'level': 'ERROR',
+            'propagate': True
+        },
+        'blog.views': {
+            'handlers': ['default', 'error'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+    }
 }
