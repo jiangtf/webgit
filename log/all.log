@@ -1,0 +1,103 @@
+2018-11-14 11:24:09,243 [Thread-1:27556] [blog.views:13] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 11:24:09,256 [Thread-1:27556] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 15007
+2018-11-14 11:24:10,277 [Thread-5:29480] [blog.views:13] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 11:24:10,295 [Thread-4:14264] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/css/index.css HTTP/1.1" 304 0
+2018-11-14 11:24:10,295 [Thread-6:16328] [blog.views:13] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 11:24:10,307 [Thread-8:18724] [blog.views:13] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 11:24:10,311 [Thread-6:16328] [django.server:124] [basehttp:log_message] [INFO]- "GET /js/sliders.js HTTP/1.1" 200 15007
+2018-11-14 11:24:10,317 [Thread-3:24192] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/css/base.css HTTP/1.1" 304 0
+2018-11-14 11:24:10,319 [Thread-5:29480] [django.server:124] [basehttp:log_message] [INFO]- "GET /js/jquery.min.js HTTP/1.1" 200 15007
+2018-11-14 11:24:10,320 [Thread-8:18724] [django.server:124] [basehttp:log_message] [INFO]- "GET /js/nav.js HTTP/1.1" 200 15007
+2018-11-14 11:24:10,419 [Thread-7:19768] [blog.views:13] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 11:24:10,421 [Thread-7:19768] [django.server:124] [basehttp:log_message] [INFO]- "GET /js/modernizr.js HTTP/1.1" 200 15007
+2018-11-14 11:24:10,466 [Thread-9:13288] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/a1.jpg HTTP/1.1" 304 0
+2018-11-14 11:24:10,577 [Thread-10:23968] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/a3.jpg HTTP/1.1" 304 0
+2018-11-14 11:24:10,588 [Thread-11:24996] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/a2.jpg HTTP/1.1" 304 0
+2018-11-14 11:24:10,590 [Thread-12:10488] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/a4.jpg HTTP/1.1" 304 0
+2018-11-14 11:24:10,618 [Thread-13:6796] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ph2.png HTTP/1.1" 304 0
+2018-11-14 11:24:10,631 [Thread-14:9288] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/slide-bg.png HTTP/1.1" 304 0
+2018-11-14 11:24:10,650 [Thread-15:22808] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/newsbg01.png HTTP/1.1" 304 0
+2018-11-14 11:24:10,650 [Thread-16:22492] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/newsbg02.png HTTP/1.1" 304 0
+2018-11-14 11:24:10,678 [Thread-17:11676] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/newsbg04.png HTTP/1.1" 304 0
+2018-11-14 11:24:10,688 [Thread-18:10984] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/newsbg03.png HTTP/1.1" 304 0
+2018-11-14 11:24:10,689 [Thread-19:28520] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ico_05_1.jpg HTTP/1.1" 304 0
+2018-11-14 11:24:10,707 [Thread-20:14480] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ico_04_1.jpg HTTP/1.1" 304 0
+2018-11-14 11:24:10,708 [Thread-21:26180] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ico_07_1.jpg HTTP/1.1" 304 0
+2018-11-14 11:24:10,718 [Thread-22:18984] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ico_06_1.jpg HTTP/1.1" 304 0
+2018-11-14 11:24:10,729 [Thread-23:10432] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/icons.png HTTP/1.1" 304 0
+2018-11-14 11:24:10,729 [Thread-24:10624] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/datepng.png HTTP/1.1" 304 0
+2018-11-14 13:48:15,155 [Thread-1:30240] [blog.views:13] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 13:48:15,171 [Thread-1:30240] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 15007
+2018-11-14 13:48:15,249 [Thread-3:22676] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/css/base.css HTTP/1.1" 200 8732
+2018-11-14 13:48:15,332 [Thread-4:22956] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/css/index.css HTTP/1.1" 200 4946
+2018-11-14 13:48:15,335 [Thread-5:15228] [blog.views:13] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 13:48:15,338 [Thread-5:15228] [django.server:124] [basehttp:log_message] [INFO]- "GET /js/nav.js HTTP/1.1" 200 15007
+2018-11-14 13:48:15,462 [Thread-9:29312] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/icons.png HTTP/1.1" 200 1459
+2018-11-14 13:48:15,501 [Thread-10:28308] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/slide-bg.png HTTP/1.1" 200 2792
+2018-11-14 13:48:15,518 [Thread-6:5888] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/a2.jpg HTTP/1.1" 200 75249
+2018-11-14 13:48:15,556 [Thread-8:24212] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/a4.jpg HTTP/1.1" 200 101551
+2018-11-14 13:48:15,589 [Thread-7:30600] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/a3.jpg HTTP/1.1" 200 244248
+2018-11-14 13:48:15,675 [Thread-12:6172] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/newsbg01.png HTTP/1.1" 200 1243
+2018-11-14 13:48:15,692 [Thread-11:27496] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/a1.jpg HTTP/1.1" 200 130712
+2018-11-14 13:48:15,748 [Thread-13:13376] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/newsbg04.png HTTP/1.1" 200 1298
+2018-11-14 13:48:15,767 [Thread-14:21216] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/newsbg03.png HTTP/1.1" 200 1254
+2018-11-14 13:48:15,804 [Thread-15:10524] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ico_05_1.jpg HTTP/1.1" 200 6397
+2018-11-14 13:48:15,819 [Thread-16:15184] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ico_06_1.jpg HTTP/1.1" 200 5493
+2018-11-14 13:48:15,835 [Thread-17:30444] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ico_04_1.jpg HTTP/1.1" 200 5451
+2018-11-14 13:48:15,862 [Thread-18:8144] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ico_07_1.jpg HTTP/1.1" 200 5618
+2018-11-14 13:48:15,870 [Thread-19:4244] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/datepng.png HTTP/1.1" 200 1204
+2018-11-14 13:48:15,870 [Thread-20:29040] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/newsbg02.png HTTP/1.1" 200 1418
+2018-11-14 13:48:15,950 [Thread-22:25228] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ph2.png HTTP/1.1" 200 1591
+2018-11-14 13:48:16,060 [Thread-21:23172] [blog.views:13] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 13:48:16,062 [Thread-21:23172] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 15007
+2018-11-14 13:48:58,390 [Thread-23:28080] [blog.views:13] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 13:48:58,391 [Thread-23:28080] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 15007
+2018-11-14 13:48:58,436 [Thread-24:29820] [blog.views:13] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 13:48:58,438 [Thread-24:29820] [django.server:124] [basehttp:log_message] [INFO]- "GET /js/nav.js HTTP/1.1" 200 15007
+2018-11-14 13:48:58,557 [Thread-25:26468] [blog.views:13] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 13:48:58,559 [Thread-25:26468] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 15007
+2018-11-14 13:49:01,765 [Thread-26:11988] [blog.views:13] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 13:49:01,767 [Thread-26:11988] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 15007
+2018-11-14 13:49:01,816 [Thread-27:11444] [blog.views:13] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 13:49:01,818 [Thread-27:11444] [django.server:124] [basehttp:log_message] [INFO]- "GET /js/nav.js HTTP/1.1" 200 15007
+2018-11-14 13:49:01,921 [Thread-28:25448] [blog.views:13] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 13:49:01,924 [Thread-28:25448] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 15007
+2018-11-14 13:49:04,002 [Thread-29:12556] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ico_07.png HTTP/1.1" 200 2692
+2018-11-14 13:49:04,425 [Thread-30:17128] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ico_04.png HTTP/1.1" 200 2177
+2018-11-14 13:49:04,666 [Thread-31:13844] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ico_06.png HTTP/1.1" 200 2333
+2018-11-14 13:49:04,805 [Thread-32:18456] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ico_05.png HTTP/1.1" 200 2404
+2018-11-14 14:37:59,096 [Thread-1:15676] [blog.views:24] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 14:37:59,116 [Thread-1:15676] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 14873
+2018-11-14 14:37:59,164 [Thread-3:24620] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/css/base.css HTTP/1.1" 304 0
+2018-11-14 14:37:59,168 [Thread-4:28840] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/css/index.css HTTP/1.1" 304 0
+2018-11-14 14:37:59,172 [Thread-5:22192] [blog.views:24] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 14:37:59,173 [Thread-5:22192] [django.server:124] [basehttp:log_message] [INFO]- "GET /js/nav.js HTTP/1.1" 200 14873
+2018-11-14 14:37:59,176 [Thread-6:11136] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/a1.jpg HTTP/1.1" 304 0
+2018-11-14 14:37:59,194 [Thread-7:21012] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/a2.jpg HTTP/1.1" 304 0
+2018-11-14 14:37:59,232 [Thread-8:9364] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/a3.jpg HTTP/1.1" 304 0
+2018-11-14 14:37:59,268 [Thread-9:29096] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/a4.jpg HTTP/1.1" 304 0
+2018-11-14 14:37:59,315 [Thread-10:18604] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/newsbg01.png HTTP/1.1" 304 0
+2018-11-14 14:37:59,315 [Thread-12:16780] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/newsbg04.png HTTP/1.1" 304 0
+2018-11-14 14:37:59,321 [Thread-13:16420] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/newsbg03.png HTTP/1.1" 304 0
+2018-11-14 14:37:59,325 [Thread-11:22956] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/newsbg02.png HTTP/1.1" 304 0
+2018-11-14 14:37:59,334 [Thread-14:29232] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/slide-bg.png HTTP/1.1" 304 0
+2018-11-14 14:37:59,336 [Thread-15:23580] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ico_05_1.jpg HTTP/1.1" 304 0
+2018-11-14 14:37:59,406 [Thread-17:15032] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ico_04_1.jpg HTTP/1.1" 304 0
+2018-11-14 14:37:59,406 [Thread-16:25584] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ico_06_1.jpg HTTP/1.1" 304 0
+2018-11-14 14:37:59,428 [Thread-19:11488] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ph2.png HTTP/1.1" 304 0
+2018-11-14 14:37:59,429 [Thread-18:30136] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ico_07_1.jpg HTTP/1.1" 304 0
+2018-11-14 14:37:59,450 [Thread-20:10064] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/datepng.png HTTP/1.1" 304 0
+2018-11-14 14:37:59,453 [Thread-21:22184] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/icons.png HTTP/1.1" 304 0
+2018-11-14 14:37:59,608 [Thread-22:23076] [blog.views:24] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 14:37:59,611 [Thread-22:23076] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 14873
+2018-11-14 14:38:02,265 [Thread-23:25172] [blog.views:24] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 14:38:02,287 [Thread-23:25172] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 14873
+2018-11-14 14:38:02,324 [Thread-24:27856] [blog.views:24] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 14:38:02,326 [Thread-24:27856] [django.server:124] [basehttp:log_message] [INFO]- "GET /js/nav.js HTTP/1.1" 200 14873
+2018-11-14 14:38:02,467 [Thread-29:10140] [blog.views:24] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 14:38:02,470 [Thread-29:10140] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 14873
+2018-11-14 14:39:45,356 [Thread-30:23576] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ico_06.png HTTP/1.1" 304 0
+2018-11-14 14:39:45,377 [Thread-31:10488] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ico_05.png HTTP/1.1" 304 0
+2018-11-14 14:41:18,542 [Thread-32:15376] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/images/ico_04.png HTTP/1.1" 304 0
+2018-11-14 15:11:02,058 [Thread-33:14112] [blog.views:24] [views:index] [ERROR]- [Errno 2] No such file or directory: 'ass.txt'
+2018-11-14 15:11:02,060 [Thread-33:14112] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 14873
