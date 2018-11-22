@@ -66,8 +66,8 @@ class Article(models.Model):
     click_count = models.IntegerField(default=0, verbose_name='点击次数')
     is_recommend = models.BooleanField(default=False, verbose_name='是否推荐')
     date_publish = models.DateTimeField(auto_now_add=True, verbose_name='发布时间')
-    user = models.ForeignKey(User, verbose_name='用户')
-    category = models.ForeignKey(Category, blank=True, null=True, verbose_name='分类')
+    user = models.ForeignKey(User, verbose_name='用户',on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, blank=True, null=True, verbose_name='分类',on_delete=models.CASCADE)
     tag = models.ManyToManyField(Tag, verbose_name='标签')
 
     objects = ArticleManager()
@@ -87,9 +87,9 @@ class Comment(models.Model):
     email = models.EmailField(max_length=50, blank=True, null=True, verbose_name='邮箱地址')
     url = models.URLField(max_length=100, blank=True, null=True, verbose_name='个人网页地址')
     date_publish = models.DateTimeField(auto_now_add=True, verbose_name='发布时间')
-    user = models.ForeignKey(User, blank=True, null=True, verbose_name='用户')
-    article = models.ForeignKey(Article, blank=True, null=True, verbose_name='文章')
-    pid = models.ForeignKey('self', blank=True, null=True, verbose_name='父级评论')
+    user = models.ForeignKey(User, blank=True, null=True, verbose_name='用户',on_delete=models.CASCADE)
+    article = models.ForeignKey(Article, blank=True, null=True, verbose_name='文章', on_delete=models.CASCADE)
+    pid = models.ForeignKey('self', blank=True, null=True, verbose_name='父级评论',on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = '评论'

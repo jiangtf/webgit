@@ -11,6 +11,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
+import pymysql
+pymysql.install_as_MySQLdb()
+
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -119,6 +122,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
+
+#自定义用户modle
+AUTH_USER_MODEL ='blog.User'
+
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
