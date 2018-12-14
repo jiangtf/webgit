@@ -21,3 +21,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url('', index ,name='index'),  # new
 ]
+
+
