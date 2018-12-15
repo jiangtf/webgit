@@ -4,17 +4,20 @@ from django.contrib import admin
 
 
 
-from .models import User,Tag,Category,ArticleManager,Article,Comment,Links,Ad
+from .models import *
 
+
+class UserAdmin(admin.ModelAdmin):
+    list_display = ('mobile', )
 
 
 admin.site.register(User)
-admin.site.register(Tag)
-admin.site.register(Category)
-admin.site.register(ArticleManager)
-admin.site.register(Article)
-admin.site.register(Comment)
-admin.site.register(Links)
-admin.site.register(Ad)
+#admin.site.register(Tag)
+#admin.site.register(Category)
+#admin.site.register(ArticleManager)
+#admin.site.register(Article)
+#admin.site.register(Comment)
+#admin.site.register(Links)
+#admin.site.register(Ad)
 
 
