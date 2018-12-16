@@ -10,14 +10,18 @@ from .models import *
 class UserAdmin(admin.ModelAdmin):
     list_display = ('mobile', )
 
+class GradeCourseAdmin(admin.ModelAdmin):
+    list_display = ('grade_name','subject_name','term','price',)
 
-admin.site.register(User)
-#admin.site.register(Tag)
-#admin.site.register(Category)
-#admin.site.register(ArticleManager)
-#admin.site.register(Article)
-#admin.site.register(Comment)
-#admin.site.register(Links)
-#admin.site.register(Ad)
+class GradeAdmin(admin.ModelAdmin):
+        list_display = ('name',)
 
+
+class subjectAdmin(admin.ModelAdmin):
+    list_display = ('name',)
+
+
+admin.site.register(grade_course, GradeCourseAdmin)
+admin.site.register(grade, GradeAdmin)
+admin.site.register(subject, subjectAdmin)
 

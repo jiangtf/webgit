@@ -16,10 +16,13 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from blog.views import index
+from DjangoUeditor import urls as DjangoUeditor_urls
+from django.conf.urls import include, url
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url('', index ,name='index'),  # new
+    url(r'^ueditor/',include('DjangoUeditor.urls' )),
 ]
 
 
